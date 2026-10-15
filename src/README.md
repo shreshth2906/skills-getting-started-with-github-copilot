@@ -25,6 +25,20 @@ A super simple FastAPI application that allows students to view and sign up for 
    - API documentation: http://localhost:8000/docs
    - Alternative documentation: http://localhost:8000/redoc
 
+## Tests
+
+Install the dependencies and run the backend API tests from the repository
+root:
+
+```bash
+pytest
+```
+
+The test suite covers the root redirect, activity listing, signup and
+unregister success paths, and the relevant duplicate, missing-participant,
+and unknown-activity errors. Tests restore the in-memory activity data after
+each case.
+
 ## API Endpoints
 
 | Method | Endpoint                                                          | Description                                                         |
